@@ -67,7 +67,7 @@ namespace ServiceReservasi
             string a = "gagal";
             try
             {
-                string sql = "insert into dbo.Pemesanan values ('" + IDPemesanan + "','" + NamaCustomer + "','" + NoTelepon + "', '" + JumlahPemesanan + "','" + IDLokasi + "')";
+                string sql = "insert into dbo.Pemesanan values ('" + IDPemesanan + "','" + NamaCustomer + "','" + NoTelepon + "', " + JumlahPemesanan + ",'" + IDLokasi + "')";
                 connection = new SqlConnection(constring); //fungsi konek ke database
                 com = new SqlCommand(sql, connection);
                 connection.Open();
